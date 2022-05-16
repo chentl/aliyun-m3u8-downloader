@@ -12,9 +12,9 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/lbbniu/aliyun-m3u8-downloader/pkg/parse"
-	"github.com/lbbniu/aliyun-m3u8-downloader/pkg/parse/aliyun"
-	"github.com/lbbniu/aliyun-m3u8-downloader/pkg/tool"
+	"github.com/chentl/aliyun-m3u8-downloader/pkg/parse"
+	"github.com/chentl/aliyun-m3u8-downloader/pkg/parse/aliyun"
+	"github.com/chentl/aliyun-m3u8-downloader/pkg/tool"
 )
 
 const (
@@ -237,7 +237,7 @@ func (d *Downloader) mergeHsToMp4() error {
 	}
 	_ = writer.Flush()
 	// Remove `ts` folder
-	_ = os.RemoveAll(d.tsFolder)
+	// _ = os.RemoveAll(d.tsFolder)
 
 	if mergedCount != d.segLen {
 		fmt.Printf("[warning] \n%d files merge failed", d.segLen-mergedCount)
