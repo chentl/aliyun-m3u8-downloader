@@ -3,9 +3,9 @@ package cmd
 import (
 	"fmt"
 	"github.com/google/uuid"
-	"github.com/lbbniu/aliyun-m3u8-downloader/pkg/download"
-	"github.com/lbbniu/aliyun-m3u8-downloader/pkg/request"
-	"github.com/lbbniu/aliyun-m3u8-downloader/pkg/tool"
+	"github.com/chentl/aliyun-m3u8-downloader/pkg/download"
+	"github.com/chentl/aliyun-m3u8-downloader/pkg/request"
+	"github.com/chentl/aliyun-m3u8-downloader/pkg/tool"
 	"github.com/spf13/cobra"
 	"log"
 )
